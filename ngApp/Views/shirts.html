@@ -1,0 +1,6 @@
+<a href="shirts"><h3>Shirts</h3></a>
+<ul ng-repeat="shirt in controller.shirts">
+    <img ng-src="{{shirt.pic}}" width="300px" height="300px">
+    <li>{{ shirt.name }}</li>
+    <li>{{ shirt.price }}</li>
+</ul>

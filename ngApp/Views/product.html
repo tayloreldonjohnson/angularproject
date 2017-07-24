@@ -1,6 +1,14 @@
 <h1>Product page</h1>
 
-<ul ng-repeat="product in controller.products">
-    <li>{{ product.name }}</li>
-    <li>{{ product.price }}</li>
+<a href="shirts"><h3>Shirts</h3></a>
+<ul ng-repeat="shirt in controller.shirts">
+    <img ng-src="{{shirt.pic}}" width="300px" height="300px">
+    <li>{{ shirt.name }}</li>
+    <li>{{ shirt.price }}</li>
+</ul>
+<a href="shoes"><h3>Shoes</h3></a>
+<ul ng-repeat="shoe in controller.shoes">
+    <a href=""><img ng-src="{{shoe.pic}}" width="300px" height="300px"></a>
+    <li>{{ shoe.name }}</li>
+    <li>{{ shoe.price }}</li>
 </ul>

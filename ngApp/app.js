@@ -13,6 +13,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider){
         templateUrl:"/ngApp/Views/product.html",
         controller: ProductController,
         controllerAs: "controller"
+    }).state("shirts",{
+        url:"/shirts",
+        templateUrl:"/ngApp/Views/shirts.html",
+        controller: ShirtsController,
+        controllerAs: "controller" 
+    }).state("shoes",{
+        url:"/shoes",
+        templateUrl:"/ngApp/Views/shoes.html",
+        controller: ShoesController,
+        controllerAs: "controller"              
     });
     $urlRouterProvider.otherwise("/notFound");
     $locationProvider.html5Mode(true);
