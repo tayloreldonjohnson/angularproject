@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" ng-app"myApp">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
     <title>Document</title>
 </head>
-<body>
-  
+<body>   
+
+    <a href="/">Home</a>
+    <a href="product">Product</a>
+     <ui-view></ui-view> 
     
+    
+    <!-- Angular script -->
     <script src="node_modules/angular/angular.js"></script>
-    <script src="ngApp/controllers/index.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <!-- Controller script -->
+    <script src="ngApp/controllers/MainController.js"></script>
+    <script src="ngApp/controllers/ProductController.js"></script>
+    
+    <!-- app.js script -->
     <script src="ngApp/app.js"></script>
 </body>
 </html>
