@@ -12,6 +12,9 @@ class LoginController{
         localStorage.setItem("password", password);
                 
         this.state.go("main");
+    }
     
-    }    
+    logout(){
+        
+    }
     }
