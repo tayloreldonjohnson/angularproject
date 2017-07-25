@@ -1,11 +1,19 @@
 class LoginController{
     constructor($state){
         this.state = $state;
-        this.email = "";
+        this.email = localStorage.getItem("email");
         this.password = "";
+
+
     }
 
-    login(){
+    // login(email, password){
+    //     localStorage.setItem("email", email);
+    //     localStorage.setItem("password", password);
+        
+        
+        
         this.state.go("main");
+    
+    }    
     }
-}

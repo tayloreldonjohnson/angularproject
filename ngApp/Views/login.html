@@ -1,16 +1,16 @@
 <h1>Login Page</h1>
 
-<form ng-submit="controller.login()">
+<form ng-submit="controller.login(email, password)">
         <div>
             <label for="user-email">Email:</label>
-            <input id="user-email" ng-model="ctrl.email" type="email" required="">
+            <input id="user-email" ng-model="email" type="email" required="">
         </div>
 
         <br>
 
         <div>
             <label for="user-password">Password:</label>
-            <input id="user-password" ng-model="ctrl.password" type="password" required="">
+            <input id="user-password" ng-model="password" type="password" required="">
         </div>
 
         <br>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>   
+<body ng-controller="">   
     <nav class="navbar navbar-default">
         <div class="container-fluid">
         <div class ="navbar-header">
@@ -24,6 +24,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">    
             <li><a href="login">Login</a></li>
+            <a ng-if="localStorage.getItem("email")" ui-sref="home" ng-click="localStorage.getItem("email")">Logout</a>
             </ul>
     </nav> 
     </div>
@@ -33,6 +34,7 @@
     <!-- Angular script -->
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.js"></script>
     
     <!-- Controller script -->
     <script src="ngApp/controllers/MainController.js"></script>

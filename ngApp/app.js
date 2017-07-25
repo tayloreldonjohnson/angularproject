@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp",["ui.router"]);
+var myApp = angular.module("myApp", ["ui.router", "ngCookies"]);
 myApp.controller("MainController", MainController);
 myApp.controller("ProductController", ProductController);
 myApp.controller("DetailsController", DetailsController);
