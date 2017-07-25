@@ -14,7 +14,7 @@ class AuthService{
     }
 
     loginUser(userName, password){
-        this.cookies.put(this.cookieKey, "123abc");
+        this.cookies.put(this.cookieKey, userName);
     }
 
     logoutUser(){

@@ -1,8 +1,11 @@
 var myApp = angular.module("myApp", ["ui.router", "ngCookies"]);
+myApp.controller("BaseController", BaseController);
 myApp.controller("MainController", MainController);
 myApp.controller("ProductController", ProductController);
 myApp.controller("DetailsController", DetailsController);
 myApp.controller("LoginController", LoginController);
+
+myApp.service("$authService", AuthService);
 
 myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider){
     $stateProvider.state("main",{

@@ -1,19 +1,12 @@
-class LoginController{
-    constructor($state){
-        this.state = $state;
-        this.email = localStorage.getItem("email");
+class LoginController extends BaseController{
+    constructor($authService, $state){
+        super($authService, $state);
+        this.email = "";
         this.password = "";
-
-
     }
-
-    // login(email, password){
-    //     localStorage.setItem("email", email);
-    //     localStorage.setItem("password", password);
         
-        
-        
+    login(){
+        this.authService.loginUser(this.email, this.password);
         this.state.go("main");
-    
-    }    
-    }
+    }        
+}    
