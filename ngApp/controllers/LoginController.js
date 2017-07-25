@@ -7,12 +7,10 @@ class LoginController{
 
     }
 
-    // login(email, password){
-    //     localStorage.setItem("email", email);
-    //     localStorage.setItem("password", password);
-        
-        
-        
+    login(email, password){
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+                
         this.state.go("main");
     
     }    

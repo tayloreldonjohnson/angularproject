@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body ng-controller="">   
+<body ng-controller="LoginController as loginctrl">   
     <nav class="navbar navbar-default">
         <div class="container-fluid">
         <div class ="navbar-header">
@@ -24,7 +24,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">    
             <li><a href="login">Login</a></li>
-            <a ng-if="localStorage.getItem("email")" ui-sref="home" ng-click="localStorage.getItem("email")">Logout</a>
+            <    
             </ul>
     </nav> 
     </div>
