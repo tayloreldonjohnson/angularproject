@@ -5,10 +5,12 @@
     <img ng-src="{{shirt.pic}}" width="300px" height="300px">
     <li>{{ shirt.name }}</li>
     <li>{{ shirt.price }}</li>
+    <li><a ui-sref="details({ id: shirt.id })">Details</a></li>
 </ul>
 <a href="shoes"><h3>Shoes</h3></a>
 <ul ng-repeat="shoe in controller.shoes">
-    <a href=""><img ng-src="{{shoe.pic}}" width="300px" height="300px"></a>
+    <img ng-src="{{shoe.pic}}" width="300px" height="300px"></a>
     <li>{{ shoe.name }}</li>
     <li>{{ shoe.price }}</li>
+    <li><a ui-sref="details({ id: shoe.id })">Details</a></li>
 </ul>

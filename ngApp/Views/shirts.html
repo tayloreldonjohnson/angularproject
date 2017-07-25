@@ -1,8 +1,10 @@
 <h1>Look at my shirts</h1>
 
 <a href="shirts"><h3>Shirts</h3></a>
+
 <ul ng-repeat="shirt in controller.shirts">
     <img ng-src="{{shirt.pic}}" width="300px" height="300px">
     <li>{{ shirt.name }}</li>
     <li>{{ shirt.price }}</li>
+    <li><a ui-sref="details({ id: shirt.id })">Details</a></li>
 </ul>
